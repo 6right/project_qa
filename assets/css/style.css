@@ -4,7 +4,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 12.5px;
     line-height: 2;
-    color: #fff;
+    color: rgb(100, 162, 255);
 }
 
 *,
@@ -25,15 +25,19 @@ body {
 }
 
 .head {
-    font-family: 'Bangers';
+    font-family: 'Merriweather', serif;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 25px;
+    opacity: 100%;
+    margin-left: 50px;
+
 
 }
 
 .head_nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -45,36 +49,40 @@ body {
 .navi_link {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: rgb(100, 162, 255);
     font-size: 15px;
 
-    margin: 0;
+    margin: 0 12px;
     position: relative;
     vertical-align: top;
-    transition: color .2 linear;
+    transition: color 0.4s linear;
 }
 
 .navi_link::after {
     content: "";
-    display:block;
+    display: block;
     width: 100%;
     height: 2px;
     display: none;
+    background-color: #a929cb;
 
-    background-color: #fff;
 
-    position:absolute;
+
+    position: absolute;
     top: 100%;
     left: 0;
     z-index: 1;
 }
-.navi_link:hover
-{
+
+.navi_link:hover {
     color: #a929cb;
 }
-.navi_link:hover:after
-{
+
+.navi_link:hover:after {
     display: block;
+
+
+
 }
 
 /* Container */
@@ -83,8 +91,10 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
-
+    background-color: rgba(0, 0, 0, 0.6);
 }
+
+
 
 /* Intro */
 
